@@ -75,5 +75,5 @@ class EdupaySessionNode(template.Node):
 		# if its type is a dict, check if session_variable has another arg passed into it
 		# if yes, use it as a key to look up the right value in the dict (session_variable)
 		# if the type of the session_variable is a string, return the string
-		#return session_value
+		return session_value
 	
