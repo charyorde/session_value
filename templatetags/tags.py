@@ -33,7 +33,7 @@ def session_value(parser, token):
 	session_variable = '' # or args - bits at session_variable
 	kwargs = None # bits as argument to session_variable
 	
-	return EdupaySessionNode(view_name, session_variable, kwargs, legacy_view_name=True)
+	return SessionNode(view_name, session_variable, kwargs, legacy_view_name=True)
 session_value = register.tag(session_value)
 	
 class SessionNode(template.Node):
