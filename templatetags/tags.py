@@ -36,7 +36,7 @@ def session_value(parser, token):
 	return EdupaySessionNode(view_name, session_variable, kwargs, legacy_view_name=True)
 session_value = register.tag(session_value)
 	
-class EdupaySessionNode(template.Node):
+class SessionNode(template.Node):
 	def __init__(self, view_name, session_variable, kwargs=None, legacy_view_name=True): #session_variable is used as args
 		self.view_name = view_name
 		self.session_variable = session_variable
